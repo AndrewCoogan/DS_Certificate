@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="sulphates <= 0.515\nentropy = 0.808\nsamples = 5197\nvalue = [3909, 1288]", fillcolor="#e58139ab"] ;
+1 [label="sulphates <= 0.435\nentropy = 0.33\nsamples = 2705\nvalue = [2541, 164]", fillcolor="#e58139ef"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="sulphates <= 0.385\nentropy = 0.103\nsamples = 1336\nvalue = [1318, 18]", fillcolor="#e58139fc"] ;
+1 -> 2 ;
+3 [label="entropy = 0.016\nsamples = 675\nvalue = [674, 1]", fillcolor="#e58139ff"] ;
+2 -> 3 ;
+4 [label="entropy = 0.172\nsamples = 661\nvalue = [644, 17]", fillcolor="#e58139f8"] ;
+2 -> 4 ;
+5 [label="pH <= 3.245\nentropy = 0.49\nsamples = 1369\nvalue = [1223, 146]", fillcolor="#e58139e1"] ;
+1 -> 5 ;
+6 [label="entropy = 0.317\nsamples = 939\nvalue = [885, 54]", fillcolor="#e58139ef"] ;
+5 -> 6 ;
+7 [label="entropy = 0.749\nsamples = 430\nvalue = [338, 92]", fillcolor="#e58139ba"] ;
+5 -> 7 ;
+8 [label="pH <= 3.145\nentropy = 0.993\nsamples = 2492\nvalue = [1368, 1124]", fillcolor="#e581392d"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="sulphates <= 0.785\nentropy = 0.754\nsamples = 642\nvalue = [503, 139]", fillcolor="#e58139b9"] ;
+8 -> 9 ;
+10 [label="entropy = 0.626\nsamples = 575\nvalue = [485, 90]", fillcolor="#e58139d0"] ;
+9 -> 10 ;
+11 [label="entropy = 0.84\nsamples = 67\nvalue = [18, 49]", fillcolor="#399de5a1"] ;
+9 -> 11 ;
+12 [label="sulphates <= 0.725\nentropy = 0.997\nsamples = 1850\nvalue = [865, 985]", fillcolor="#399de51f"] ;
+8 -> 12 ;
+13 [label="entropy = 1.0\nsamples = 1482\nvalue = [759, 723]", fillcolor="#e581390c"] ;
+12 -> 13 ;
+14 [label="entropy = 0.866\nsamples = 368\nvalue = [106, 262]", fillcolor="#399de598"] ;
+12 -> 14 ;
+}
